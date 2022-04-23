@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="150" height="150">
+    </canvas>
+</body>
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = "rgba(255,0,0,0.3)";
+    ctx.fillRect(10, 10, 95, 90);
+    ctx.fillStyle = "rgba(0,255,0,0.3)";
+    ctx.fillRect(50, 50, 105, 100);
+</script>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+
+<body>
+    <canvas id="convasbx" width="300" height="150" style="margin: 15% 40% 0 40%;">
+    </canvas>
+</body>
+<script>
+    var c = document.getElementById("convasbx");
+    var context = c.getContext("2d");
+    var gradient = context.createLinearGradient(10, 10, 150, 0);
+    gradient.addColorStop(0, "red");
+    gradient.addColorStop(1, "pink");
+    context.fillStyle = gradient;
+    context.fillRect(0, 0, 300, 150);
+</script>
+
+</html>
